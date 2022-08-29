@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+/*Logo*/
+.logo {
+    font-size: 30px;
+    color: #0F6AC9;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo a {
+    color: #0F6AC9;
+
+}
+
+.logo>b {
+    font-weight: 900px;
+    font: rgb(255, 255, 255);
+
+
+}
+
+/*Fim-Logo*/
+/*Collection*/
+.Collection-container {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.Collection-container a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+/*Fim-Collection*/
+/*Search*/
+.search-container {
+    color: rgb(29, 29, 29);
+    justify-content: flex-start;
+}
+.search-container i{
+    position: absolute;
+    top: 28px;
+    right: calc(60%);
+}
+
+.input {
+    width: 38em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*Fim-Search*/
+/*User*/
+.user-container {
+    display: flex;
+}
+.user-container a{
+    margin: 10px;
+}
+.badge {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    right: calc(17%-20px);
+    top:3px;
+}
+
+
+.userIcon {
+    color: rgb(29, 29, 29);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Fim-User*/
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1300px) {
+    .Collection-container {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width: 1212px) {
+    .Collection-container {
+        font-size: 10px;
+    }
+    .input {
+        width: 20em;
+    }
+    .search-container i{
+        position: absolute;
+        top: 25px;
+        right:55%;
+    }
+
+}
+
+@media(max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+
+    .accessories {
+        margin-left: 10px
+    }
+    .search-container i{
+        position: absolute;
+        top: 25px;
+        right:60%;
+    }
+}
+
+@media(max-width: 850px) {
+
+    .Collection-container {
+        font-size: 10px;
+    }
+
+    .userIcon {
+        font-size: 10px;
+    }
+
+    .input {
+        width: 15em;
+    }
+    .search-container i{
+        position: absolute;
+        top: 25px;
+        right:55%;
+    }
+    .badge {
+        width: 10px;
+        height: 10px;
+        padding-top: 3px;
+        font-size: 5px;
+        top:18px;
+    }
+}
+
+@media(max-width: 680px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    .Collection-container {
+        font-size: 9px;
+    }
+
+    .userIcon {
+        font-size: 9px;
+    }
+
+}
+
+@media(max-width: 550px) {
+    .container {
+        padding: 20px 25px;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+
+    .input {
+        width: 5em;
+        height: 2em;
+        padding: 1px 10px;
+    }
+
+}
+
+
+
+@media(max-width: 400px) {
+    .input {
+        width: 1px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .Collection-container {
+        font-size: 7px;
+    }
+
+    .userIcon {
+        font-size: 7px;
+    }
+
+}
